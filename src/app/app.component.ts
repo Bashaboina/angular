@@ -1,21 +1,12 @@
 import { Component } from '@angular/core';
-
-export class Hero {
-  id: number;
-  name: string;
-}
+import { Hero } from './hero';
+import { HeroDetailComponent } from './hero-detail.component';
   
 @Component({
   selector: 'my-app',
   template: `<h1>{{title}}</h1> 
             <h2>My Heroes</h2> 
-            <div *ngIf="selectedHero">
-            <h2> <label> id: </label> {{selectedHero.id}} </h2>
-            <div>
-              <label> Hero Name: </label>
-              <input [(ngModel)]="selectedHero.name" placeholder="name" />
-            </div>
-            </div>
+            <hero-detail [hero]="selectedHero"> </hero-detail>
               <ul class="heroes">
               <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
                 <span class="badge"> {{hero.id}} </span> {{hero.name}}
