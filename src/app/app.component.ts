@@ -4,15 +4,14 @@ import {HeroComponent} from "./hero.component";
 @Component ({
     selector: "my-app",
     template: `
-    <h1>{{pageTitle}}</h1>
-    <nav>
-        <a routerLink="/dashboard"> Dashboard </a>
-        <a routerLink="/heroes">Heroes</a>
-    </nav>
-    
-   <router-outlet></router-outlet>
-    <my-heroes> </my-heroes>
-    `
+  <h1>{{title}}</h1>
+  <nav>
+    <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+    <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+  </nav>
+  <router-outlet></router-outlet>
+`,
+    styleUrls:["./app.component.css"]
 })
 export class AppComponent {
     pageTitle:string = "Tour of heroes";
