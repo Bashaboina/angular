@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {HeroComponent} from "./hero.component";
+import {HeroesComponent} from "./heroes.component";
 
 @Component ({
     selector: "my-app",
@@ -8,6 +8,7 @@ import {HeroComponent} from "./hero.component";
   <nav>
     <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
     <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+    <a routerLink="/remits" routerLinkActive="active">Remits</a>
   </nav>
   <router-outlet></router-outlet>
 `,

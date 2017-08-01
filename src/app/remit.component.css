@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+table,th,tr,td {
+    border:1px solid saddlebrown;
+    border-collapse: collapse;
+}

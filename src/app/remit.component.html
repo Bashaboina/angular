@@ -1,0 +1,17 @@
+<table>
+    <thead>
+        <tr >
+            <td *ngFor="let remit of remits">
+                {{remit.bankName}}
+            </td>
+        <tr>
+
+    </thead>
+    <tbody>
+        <tr >
+            <td *ngFor="let remit of remits"> 
+                <a [href]='remit.url' > {{remit.rate}} </a>
+            </td>
+         </tr>
+    </tbody>
+</table>
